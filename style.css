@@ -1,0 +1,39 @@
+@font-face {
+    font-family: BodoniModa;
+    src: url(fonts/Bodoni_Moda,Montserrat/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Bodoni_Moda,Montserrat/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#frontpage-header{
+
+    width: 50vw;
+    margin-inline: auto;
+    margin: 0 auto;
+}
+
+#front-page-nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    white-space: nowrap;
+}
+
+#front-page-nav > a {
+
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat, sans-serif;
+
+}

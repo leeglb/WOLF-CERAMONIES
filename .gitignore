@@ -1,2 +1,4 @@
-.DS_STORE
-.MACOSX
+*.DS_STORE
+*.MACOSX
+*.ttf
+*OFL.txt
