@@ -16,7 +16,7 @@
 
 #frontpage-header{
 
-    width: 50vw;
+    width: 70vw;
     margin-inline: auto;
     margin: 0 auto;
 }
@@ -26,24 +26,142 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    margin-top: clamp(1rem, 3vw, 2rem);
+    gap: clamp(1rem, 5vw, 5rem);
     white-space: nowrap;
 }
 
 #front-page-nav > a {
 
+    position: relative;
     text-decoration: none;
     color: black;
     font-family: Montserrat, sans-serif;
+    cursor: pointer;
 
+}
+
+#front-page-nav > a::after {
+
+    content: '';
+    position: absolute;
+    align-self: center;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #7f7053;
+
+    transition: width 0.35s ease-in-out;
+}
+
+#front-page-nav > a:hover::after {
+
+    width: 100%;
 }
 
 #landing-page {
 
-    margin: 15vw auto;
+    margin: clamp(5rem, 10vh, 8rem) auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Montserrat;
+    gap: 0.25rem;
 }
 
+#name-title,
+#wolf-title,
+#ceremonie-title {
+    
+    margin: 0;
+    
+}
+
+#name-title {
+    
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 4.5rem);
+}
+
+#wolf-title {
+
+    font-size: clamp(5rem, 10vw, 11rem);
+    line-height: 0.85;
+}
+
+#ceremonie-div {
+
+    width: fit-content;
+    max-width: calc(100vw - 2rem);
+}
+
+#ceremonie-title {
+
+    font-size: clamp(2.4rem, 4.5vw, 4.75rem);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+#landing-page-hr {
+
+    align-self: center;
+    border-top: 2px solid #7f7053;
+    width: 100%;
+
+}
+
+#landing-page-description {
+
+    margin-top: 0.7rem;
+    font-size: clamp(1.1rem, 1.4rem, 1.5rem);
+}
+
+#landing-page-location {
+
+    margin-top: 0;
+    font-size: clamp(1rem, 1.2rem, 1.3rem);
+    font-weight: 600;
+}
+
+#landing-page-quote-div {
+
+    margin-top: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#landing-page-quote {
+
+    width: 80%;
+    text-align: center;
+    font-size: clamp(1rem, 1.2rem, 1.3rem);
+    font-style: italic;
+}
+
+#landing-page-button {
+
+    display: block;
+    width: 47%;
+    height: 60px;
+    line-height: 40px;
+    border: 2px solid #7f7053;
+    background-color: white;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 1.1rem, 1.3rem);
+    letter-spacing: 2px;
+    transition: all 0.35s;
+}
+
+
+#landing-page-button:hover {
+
+    cursor: pointer;
+    color: #fff;
+    background: #7f7053;
+}
