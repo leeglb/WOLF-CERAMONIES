@@ -37,3 +37,13 @@
     font-family: Montserrat, sans-serif;
 
 }
+
+#landing-page {
+
+    margin: 15vw auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
