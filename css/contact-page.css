@@ -59,3 +59,116 @@
 
     width: 100%;
 }
+
+#contact-page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    border: 2px solid black;
+}
+
+#personal-information-div {
+
+    border: 2px solid black;
+    margin: clamp(5rem, 10vh, 8rem) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    gap: 0.25rem;
+}
+
+#name-title,
+#wolf-title,
+#ceremonie-title {
+    
+    margin: 0;
+    
+}
+
+#name-title {
+    
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 4.5rem);
+}
+
+#wolf-title {
+
+    font-size: clamp(5rem, 10vw, 11rem);
+    line-height: 0.85;
+}
+
+#ceremonie-div {
+
+    width: fit-content;
+    max-width: calc(100vw - 2rem);
+}
+
+#ceremonie-title {
+
+    font-size: clamp(2.4rem, 4.5vw, 4.75rem);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+#contact-page-hr {
+
+    align-self: center;
+    border-top: 2px solid #7f7053;
+    width: 100%;
+
+}
+
+#contact-page-description {
+
+    margin-top: 0.7rem;
+    font-size: clamp(1.1rem, 1.4rem, 1.5rem);
+}
+
+#contact-page-location {
+
+    margin-top: 0;
+    font-size: clamp(1rem, 1.2rem, 1.3rem);
+    font-weight: 600;
+}
+
+#contact-form-div {
+
+    border: 2px solid black;
+    height: 25vh;
+    width: 80vw;
+    margin-right: 2vw;
+    
+    
+}
+
+#contact-form-row1 {
+
+    display: flex;
+    gap: clamp(7vw, 7.6vw, 9.2vw);
+    font-size: 1.2rem;
+}
+
+#contact-form-row2 {
+    
+    margin-top: 0.5vh;
+}
+
+#contact-form-row2 > #name, #email {
+
+    width: 47%;
+    height: 33px;
+    line-height: 40px;
+    border: 2px solid #bbbab9;
+    background-color: white;
+}
+
+#contact-form-row3 {
+
+    margin-top: 1vh;
+    font-size: 1.2rem;
+}
