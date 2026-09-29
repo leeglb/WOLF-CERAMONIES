@@ -14,6 +14,17 @@
     font-display: swap;
 }
 
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
 #frontpage-header{
 
     width: 70vw;
@@ -64,21 +75,29 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10vw;
-    margin: clamp(2vw, 3vw, 4vw);
+    align-items: flex-start;
+
+    gap: clamp(2rem, 4vw, 5rem);
+
+    max-width: 1500px;
+
+    margin: clamp(2rem, 3rem, 4rem) auto;
+    padding: 0 clamp(1rem, 3vw, 3rem);
 }
 
 #personal-information-div {
 
-    margin: clamp(5rem, 10vh, 8rem) auto;
+    width: 30%;
+    max-width: 430px;
+    margin-top: clamp(2vh, 3vh, 4vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     font-family: Montserrat;
     gap: 0.25rem;
-    
+
 }
 
 #name-title,
@@ -98,7 +117,7 @@
 
 #wolf-title {
 
-    font-size: clamp(5rem, 10vw, 11rem);
+    font-size: clamp(3rem, 6vw, 5rem);
     line-height: 0.85;
 }
 
@@ -136,15 +155,63 @@
     font-weight: 600;
 }
 
+#contact-page-text-div > img {
+    
+    width: 95%;
+    max-width: 380px;
+    margin: clamp(3rem, 6vh, 5rem);
+    object-position: center -20px;
+    display: block;
+    justify-self: center;
+}
+
+#contact-page-text-div > #arrange-funeral-text {
+
+    max-width: 380px;
+    line-height: 1.8;
+    font-family: BodoniModa;
+    font-style: italic;
+    font-size: clamp(1.5rem, 1.5rem, 2rem);
+}
+
+#contact-page-text-div > #image-caption {
+
+    margin-top: 0;
+    font-family: BodoniModa;
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 0.08rem;
+    transform: translateY(-6rem);
+    
+}
+
+#contact-page-text-div > hr {
+    margin: 2rem 0;
+    width: 20%;
+}
+
+/* Middle HR Page Seperator */
+
+#form-seperator {
+
+    
+    width: 2px;
+    height: clamp(50rem, 70vh, 70rem);
+
+    border: none;
+    background-color: #7f7053;
+
+    margin: 0 clamp(2rem, 4vw, 4rem);
+    
+    align-self: center;
+}
 
 /* Contact Form Styling Section */
 
 #contact-form-div {
 
-    height: 45vh;
-    width: 80vw;
-    margin-right: 2vw;
-    
+    width: 55%;
+    max-width: 850px;
 }
 
 #contact-form-contact-heading {
@@ -337,4 +404,40 @@
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
+}
+
+
+/* Footer Section */
+
+footer {
+
+    width: 95%;
+    margin: 0 auto;
+}
+
+footer > #footer-hr {
+
+    width: 100%;
+    align-self: center;
+    border-top: 2px solid #7f7053;
+}
+
+footer > #footer-div {
+    
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+}
+
+footer > #footer-div > #footer-wolf-ceremonies {
+
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+}
+
+footer > #footer-div > #footer-message {
+
+    font-size: 0.95rem;
+    word-spacing: 2px;
+
 }
