@@ -1,6 +1,6 @@
 @font-face {
     font-family: BodoniModa;
-    src: url(fonts/Bodoni_Moda,Montserrat/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
+    src: url(../fonts/Bodoni_Moda,Montserrat/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url(fonts/Bodoni_Moda,Montserrat/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Bodoni_Moda,Montserrat/Montserrat/Montserrat-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -71,6 +71,10 @@ body {
     width: 100%;
 }
 
+/* ----------------- */
+/* Contact Left Side */
+/* ----------------- */
+
 #contact-page {
 
     display: flex;
@@ -112,13 +116,19 @@ body {
     
     margin-bottom: 1rem;
     font-weight: 500;
-    font-size: clamp(2rem, 4vw, 4.5rem);
+
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    white-space: nowrap; /* ensures it stays on one line :) */
+
+    letter-spacing: 0.06em;
+
 }
 
 #wolf-title {
 
     font-size: clamp(3rem, 6vw, 5rem);
     line-height: 0.85;
+    white-space: nowrap; /* ensures it stays on one line :) */
 }
 
 #ceremonie-div {
@@ -129,9 +139,11 @@ body {
 
 #ceremonie-title {
 
-    font-size: clamp(2.4rem, 4.5vw, 4.75rem);
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
     font-weight: 500;
-    letter-spacing: 0.1em;
+
+    letter-spacing: 0.15em;
+    white-space: nowrap; /* ensures it stays on one line :) */
 }
 
 #contact-page-hr {
@@ -170,6 +182,7 @@ body {
     max-width: 380px;
     line-height: 1.8;
     font-family: BodoniModa;
+    font-weight: 575;
     font-style: italic;
     font-size: clamp(1.2rem, 1.3rem, 1.4rem);
 }
@@ -179,6 +192,7 @@ body {
     margin-top: 0;
     font-family: BodoniModa;
     font-size: 1.2rem;
+    font-weight: 575;
     font-style: italic;
     letter-spacing: 0.08rem;
     transform: translateY(-6rem);
@@ -190,7 +204,9 @@ body {
     width: 20%;
 }
 
+/* ----------------- */
 /* Middle HR Page Seperator */
+/* ----------------- */
 
 #form-seperator {
 
@@ -206,7 +222,9 @@ body {
     align-self: center;
 }
 
+/* ----------------- */
 /* Contact Form Styling Section */
+/* ----------------- */
 
 #contact-form-div {
 
@@ -225,7 +243,7 @@ body {
 #contact-form-enquiry-heading {
 
     font-family: BodoniModa;
-    font-weight: 280;
+    font-weight: 600;
     font-size: 3.5rem;
 }
 
@@ -406,8 +424,9 @@ body {
     flex-shrink: 0;
 }
 
-
+/* ----------------- */
 /* Footer Section */
+/* ----------------- */
 
 footer {
 
@@ -432,12 +451,10 @@ footer > #footer-div {
 footer > #footer-div > #footer-wolf-ceremonies {
 
     letter-spacing: 0.1em;
-    font-size: 1.2rem;
 }
 
 footer > #footer-div > #footer-message {
 
-    font-size: 0.95rem;
     word-spacing: 2px;
 
 }
